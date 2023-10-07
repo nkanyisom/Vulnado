@@ -10,7 +10,7 @@ services:
     environment:
       - PGPASSWORD=vulnado
       - PGDATABASE=vulnado
-      - PGHOST=db:5432
+      - PGHOST=localhost:5432
       - PGUSER=postgres
     depends_on:
       - "db"
