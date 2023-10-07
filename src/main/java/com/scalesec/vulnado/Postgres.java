@@ -16,7 +16,7 @@ public class Postgres {
             Class.forName("org.postgresql.Driver");
             String url = new StringBuilder()
                     .append("jdbc:postgresql://")
-                    .append("locahost:5432")
+                    .append("0.0.0.0:5432")
                     .append("/")
                     .append("vulnado").toString();
             System.out.println("url: " + url);
