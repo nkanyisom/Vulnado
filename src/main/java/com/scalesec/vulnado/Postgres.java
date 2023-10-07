@@ -16,13 +16,13 @@ public class Postgres {
             Class.forName("org.postgresql.Driver");
             String url = new StringBuilder()
                     .append("jdbc:postgresql://")
-                    .append("100.20.92.101:5432")
+                    .append("dpg-ckguba4ldqrs73fcrqvg-a:5432")
                     .append("/")
                     .append("vulnado").toString();
             System.out.println("url: " + url);
             //jdbc:postgresql://null/null
             return DriverManager.getConnection(url,
-                    "postgres", "vulnado");
+                    "vulnadopostgres", "nBJgdRC2MgiFxIrv5OAa21WImIXzS7L7");
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println(e.getClass().getName()+": "+e.getMessage());
